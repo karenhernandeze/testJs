@@ -42,3 +42,17 @@ describe('givenDecimal8WhenConvertThenOctal10', function(){
         assert.strictEqual(expectedResult, actualResult);
     })
 })
+
+describe('givenDecimal95WhenConvertThenOctal137', function(){
+    it('convert(95) = 137', function() {
+        //GIVEN 
+        var a = 95;
+        var expectedResult = 137;
+
+        //WHEN 
+        var actualResult = octalConverter.convert(a);
+        
+        //THEN 
+        assert.strictEqual(expectedResult, actualResult);
+    })
+})
